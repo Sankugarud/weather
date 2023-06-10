@@ -68,7 +68,7 @@ async function apicall(){
 
         search.value = "";
     } catch (error) {
-        alert(error);
+       alert("Plz Enter Correct City Name!!!");
     }
     
 };  
