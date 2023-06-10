@@ -21,7 +21,7 @@ async function apicall(){
         let responce = await api.json();
         console.log(responce.main.temp);
 
-        if(search.value !== reresponce.name){
+        if(search.value !== responce.name){
             alert("Plz Enter Correct City Name!!!");
         }
     
