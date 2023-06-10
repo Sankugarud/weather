@@ -21,7 +21,9 @@ async function apicall(){
         let responce = await api.json();
         console.log(responce.main.temp);
 
-        
+        if(search.value !== reresponce.name){
+            alert("Plz Enter Correct City Name!!!");
+        }
     
         let images = document.getElementById("images");
         if(responce.weather[0].main == "Clouds"){
@@ -66,7 +68,7 @@ async function apicall(){
 
         search.value = "";
     } catch (error) {
-        alert("Plz Enter Correct City Name!!!");
+        alert(error);
     }
     
 };  
